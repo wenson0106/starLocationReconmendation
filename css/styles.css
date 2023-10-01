@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+  
+html,body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 微軟正黑體, Poppins;
+  color: #D6DCE5;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  padding: 5vh 5vw;
+  width: 100%;
+}
+
+#function-Menu {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(34, 42, 53, 0.8);
+  width: 100%;
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5vw;
+  border-radius: 30px 30px 0 0;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* 其他瀏覽器 */
+}
+
+#function-Menu > button {
+  border: 2.5px solid #8497B0;
+  border-radius: 17.5px;
+  background-color: rgba(34, 42, 53, 0.8);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 2.5vw;
+  background-size: calc(100% - 20px) calc(100% - 20px);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#function-Menu> button:hover {
+  box-shadow: 0px 0px 10px #8497B0;
+}
+
+#function-Menu > button:active, #function-Menu > button:focus {
+  border: none;
+}
+
+#focus {
+  border-color: #D6DCE5!important;
+}
